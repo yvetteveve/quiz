@@ -11,8 +11,9 @@ body{
     #background{
       background-image:url("https://images.pexels.com/photos/40757/pen-crayon-color-sharp-40757.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=500&w=500");
       background-size: cover;
-      width: 100%;
-     padding-left: 450px;
+      width: 44%;
+      margin-left: 350px;
+     padding-left: 250px;
     }
 
     h3{
@@ -68,4 +69,6 @@ padding:30px;}
     margin-top:30px;
     background-color: rgb(53, 12, 12);
     padding:20px;
+    width:44%;
+    margin-left: 350px;
   }
