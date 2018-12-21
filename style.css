@@ -41,13 +41,13 @@ body{
   }
 
   label{
-      color:black;
-      font-style: italic;
-      font-size: 5px;
+    color:black;
+    font-style: italic;
+    font-size: 5px;
   }
   label > input {
     display: flex;
-    justify-content: flex-start
+    justify-content: flex-start;
   }
 
   .input{
