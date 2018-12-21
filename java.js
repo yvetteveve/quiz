@@ -32,20 +32,18 @@ function check() {
   if (questionTen == "4") {
     count += 5;
   }
+  function displayer(){
   document.getElementById("after_submit").style.visibility = "visible";
 
   document.getElementById("number_count").innerHTML =
     "You got " + count + "/50";
-
-  $("#button").hide();
-  $("#quiz").hide();
-  $("#number_count").show();
-  event.preventDefault();
+  }
+ 
 }
 $(document).ready(function(){
   $("form#form").submit(function(event){
-    event.preventDefault();
-    var questionOne =$("input:radio[name:first]:checked");
+  event.preventDefault();
+  var questionOne =$("input:radio[name:first]:checked");
   var questionTwo = $("input:radio[name:second]:checked");
   var questionThree = $("input:radio[name:third]:checked");
   var questionFour = $("input:radio[name:fourth]:checked");
@@ -55,6 +53,12 @@ $(document).ready(function(){
   var questionEight = $("input:radio[name:eighth]:checked");
   var questionNine = $("input:radio[name:ninth]:checked");
   var questionTen = $("input:radio[name:tenth]:checked");
+
+  $("#button").hide();
+  $("#quiz").hide();
+  $("#number_count").show();
+  displayer();
+  event.preventDefault();
     
   })
 })
