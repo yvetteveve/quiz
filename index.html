@@ -4,111 +4,114 @@
       <title>Javascript Quiz</title>
       <link href="bootstrap.css" rel="stylesheet" type="text/css">
       <link href="style.css" rel="stylesheet" type="text/css">
-      <script src="script.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>   
+      <script src="java.js"></script>
    </head>
    <body>
        <div id="background">
           <h2>QUIZ BOARD</h2>
           <h3>Moringa School Javascript Quiz@</h3>
+          <p id="number_count"></p>
           </div>
         <div class= "container">
       
         <div class="radio">
-            <form id="form">
+         <form id="quiz">
         <div id="first">
         <p class="question">Inside which HTML element do we put the JavaScript?</p>
         <label>
-        <p class="input"><input type="radio" name="first" value="questionOne.value;">&lt;script&gt;</p><br>
-        <p class="input"><input type="radio" name="first" value="questionOne.value;">&lt;javascript&gt;</p><br>
-        <p class="input"><input type="radio" name="first" value="questionOne.value;">&lt;js&gt;</p><br>
+        <p class="input"><input type="radio" name="first" value="1">&lt;script&gt;</p><br>
+        <p class="input"><input type="radio" name="first" value="2">&lt;javascript&gt;</p><br>
+        <p class="input"><input type="radio" name="first" value="3;">&lt;js&gt;</p><br>
         </label>
         </div>
 
         <div id="second">
         <p class="question">What javaScript syntax to change the content of the HTML element below?</p>
         <label>
-        <p class="input"><input type="radio" name="second" value="questionTwo.value;">document.getElementById("demo").innerHTML = "Hello World!"</p><br>
-        <p class="input"><input type="radio" name="second" value="questionTwo.value;">document.getElementByName("p").innerHTML = "Hello World!";</p><br>
-        <p class="input"><input type="radio" name="second" value="questionTwo.value;">#demo.innerHTML = "Hello World!";</p><br>
+        <p class="input"><input type="radio" name="second" value="1">document.getElementById("demo").innerHTML = "Hello World!"</p><br>
+        <p class="input"><input type="radio" name="second" value="2">document.getElementByName("p").innerHTML = "Hello World!";</p><br>
+        <p class="input"><input type="radio" name="second" value="3">#demo.innerHTML = "Hello World!";</p><br>
         </label>
         </div>
         
         <div>
         <p class="question">Where is the correct place to insert a JavaScript?</p>
         <label>
-        <p class="input"><input type="radio" name="third" value="questionThree.value;">Both the <head> section and the <body> section are correct</p><br>
-        <p class="input"><input type="radio" name="third" value="questionThree.value;">The <body> section</p><br>
-        <p class="input"><input type="radio" name="third" value="questionThree.value;">The <head> section</p><br>
+        <p class="input"><input type="radio" name="third" value="1">Both the <head> section and the <body> section are correct</p><br>
+        <p class="input"><input type="radio" name="third" value="2">The <body> section</p><br>
+        <p class="input"><input type="radio" name="third" value="3">The <head> section</p><br>
         </label>
         </div> 
 
         <div>
         <p class="question">What is the correct syntax for referring to an external script called "xxx.js"?</p>
         <label>
-        <p class="input"><input type="radio" name="fourth" value="questionFour.value;">&lt;script name="xxx.js"&gt</p><br>
-        <p class="input"><input type="radio" name="fourth" value="questionFour.value;">&lt;script src="xxx.js"</p><br>
-        <p class="input"><input type="radio" name="fourth" value="questionFour.value;">&lt;script href="xxx.js"</p><br>
+        <p class="input"><input type="radio" name="fourth" value="1">&lt;script name="xxx.js"&gt</p><br>
+        <p class="input"><input type="radio" name="fourth" value="2">&lt;script src="xxx.js"</p><br>
+        <p class="input"><input type="radio" name="fourth" value="3">&lt;script href="xxx.js"</p><br>
         </label>
         </div> 
 
         <div>
         <p class="question">The external JavaScript file must contain the.</p>
         <label>
-        <p class="input"><input type="radio" name="fifth" value="questionFive.value;">False</p><br>
-        <p class="input"><input type="radio" name="fifth" value="questionFive.value;">True</p><br>
+        <p class="input"><input type="radio" name="fifth" value="1">False</p><br>
+        <p class="input"><input type="radio" name="fifth" value="2">True</p><br>
         </label>
         </div> 
 
         <div>
         <p class="question">How do you write "Hello World" in an alert box?</p>
         <label>
-        <p class="input"><input type="radio" name="sixth" value="questionSix.value;">msg("Hello World")</p><br>
-        <p class="input"><input type="radio" name="sixth" value="questionSix.value;">alertBox("Hello World")</p><br>
-        <p class="input"><input type="radio" name="sixth" value="questionSix.value;">msgBox("Hello World")</p><br>
+        <p class="input"><input type="radio" name="sixth" value="1">msg("Hello World")</p><br>
+        <p class="input"><input type="radio" name="sixth" value="2">alertBox("Hello World")</p><br>
+        <p class="input"><input type="radio" name="sixth" value="3">msgBox("Hello World")</p><br>
         </label>
         </div>
         
         <div>
         <p class="question">How do you create a function in JavaScript?</p>
         <label>
-        <p class="input"><input type="radio" name="seventh" value="questionSeven.value;">function:myFunction()</p><br>
-        <p class="input"><input type="radio" name="seventh" value="questionSeven.value;">function myFunction()</p><br>
-        <p class="input"><input type="radio" name="seventh" value="questionSeven.value;">function = myFunction()</p><br>
+        <p class="input"><input type="radio" name="seventh" value="1">function:myFunction()</p><br>
+        <p class="input"><input type="radio" name="seventh" value="2">function myFunction()</p><br>
+        <p class="input"><input type="radio" name="seventh" value="3">function = myFunction()</p><br>
         </label>
         </div> 
 
         <div>
         <p class="question">How do you call a function named "myFunction"?</p>
         <label>
-        <p class="input"><input type="radio" name="eighth" value="questionEight.value;">myFunction()</p><br>
-        <p class="input"><input type="radio" name="eighth" value="questionEight.value;">call function myFunction()</p><br>
-        <p class="input"><input type="radio" name="eighth" value="questionEight.value;">call myFunction()</p><br>
+        <p class="input"><input type="radio" name="eighth" value="1">myFunction()</p><br>
+        <p class="input"><input type="radio" name="eighth" value="2">call function myFunction()</p><br>
+        <p class="input"><input type="radio" name="eighth" value="3">call myFunction()</p><br>
         </label>
       </div>
         <div>
         <p class="question">How to write an IF statement in JavaScript?</p>
         <label>
-        <p class="input"><input type="radio" name="ninth" value="questionNine.value;">if i == 5 then</p><br>
-        <p class="input"><input type="radio" name="ninth" value="questionNine.value;">if i = 5 then</p><br>
-        <p class="input"><input type="radio" name="ninth" value="questionNine.value;"> if i = 5</p><br>
+        <p class="input"><input type="radio" name="ninth" value="1">if i == 5 then</p><br>
+        <p class="input"><input type="radio" name="ninth" value="2">if i = 5 then</p><br>
+        <p class="input"><input type="radio" name="ninth" value="3"> if i = 5</p><br>
         </label>
         </div> 
 
         <div>
         <p class="question">How to write an IF statement for executing some code if "i" is NOT equal to 5?</p>
         <label>
-        <p class="input"><input type="radio" name="tenth" value="questionTen.value;">if (i != 5)</p><br>
-        <p class="input"><input type="radio" name="tenth" value="questionTen.value;">if (i <> 5)</p><br>
-        <p class="input"><input type="radio" name="tenth" value="questionTen.value;">if i =! 5 then</p><br>
+        <p class="input"><input type="radio" name="tenth" value="1">if (i != 5)</p><br>
+        <p class="input"><input type="radio" name="tenth" value="2">if (i <> 5)</p><br>
+        <p class="input"><input type="radio" name="tenth" value="3">if i =! 5 then</p><br>
         </label>
         </div> 
-        <button id="submit" type="submit">Result</button>
+        <input id="submit" type="submit" value="submit"/>
       </form>
-      <div id="after_submit">
-         <p id="number_count"></p>
-      </div>
+      
     </div>
   </div>
+  <div id="after_submit">
+      
+   </div>
   <footer>
      <p>Yvette Umubyeyi   Moringa School</p>
   </footer>
