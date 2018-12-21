@@ -4,17 +4,17 @@
       <title>Javascript Quiz</title>
       <link href="bootstrap.css" rel="stylesheet" type="text/css">
       <link href="style.css" rel="stylesheet" type="text/css">
-      <script src= "script.js"></script>
+      <script src="script.js"></script>
    </head>
    <body>
        <div id="background">
           <h2>QUIZ BOARD</h2>
-               <h3>Moringa School Javascript Quiz@</h3>
-              </div>
+          <h3>Moringa School Javascript Quiz@</h3>
+          </div>
         <div class= "container">
       
         <div class="radio">
-            
+            <form id="form">
         <div>
         <p class="question">Inside which HTML element do we put the JavaScript?</p>
         <label>
@@ -84,7 +84,7 @@
         <p class="input"><input type="radio" name="document.quiz" value="questionEight.value;">call function myFunction()</p><br>
         <p class="input"><input type="radio" name="document.quiz" value="questionEight.value;">call myFunction()</p><br>
         </label>
-
+      </div>
         <div>
         <p class="question">How to write an IF statement in JavaScript?</p>
         <label>
@@ -102,9 +102,17 @@
         <p class="input"><input type="radio" name="document.quiz" value="questionTen.value;">if i =! 5 then</p><br>
         </label>
         </div> 
-    </div>
+        <button id="submit" onclick="check()">Result</button>
+      </form>
+      <div id="after_submit">
+         <p id="number_count"></p>
+      </div>
     </div>
   </div>
+  <footer>
+     <p>Yvette Umubyeyi</p>
+     <p>Moringa School</p>
+  </footer>
     </body>
 </html>
 

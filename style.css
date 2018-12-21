@@ -7,7 +7,7 @@ body{
     font-size: 50px; 
     font-style: italic;
     }
-    
+
     #background{
       background-image:url("https://images.pexels.com/photos/40757/pen-crayon-color-sharp-40757.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=500&w=500");
       background-size: cover;
@@ -57,3 +57,4 @@ body{
   .question{
     font-weight: bold;
   }
+  #button{display:none;}
