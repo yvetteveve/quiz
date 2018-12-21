@@ -1,14 +1,6 @@
 function check() {
-  var questionOne = document.quiz.questionOne.value;
-  var questionTwo = document.quiz.questionTwo.value;
-  var questionThree = document.quiz.questionThree.value;
-  var questionFour = document.quiz.questionFour.value;
-  var questionFive = document.quiz.questionFive.value;
-  var questionSix = document.quiz.questionSix.value;
-  var questionSeven = document.quiz.questionSeven.value;
-  var questionEight = document.quiz.questionEight.value;
-  var questionNine = document.quiz.questionNine.value;
-  var questionTen = document.quiz.questionTen.value;
+
+  
   var count = 0;
 
   if (questionOne == "2") {
@@ -51,3 +43,19 @@ function check() {
   $("#number_count").show();
   event.preventDefault();
 }
+$(document).ready(function(){
+  $("form#form").submit(function(event){
+    event.preventDefault();
+    var questionOne =$("input:radio[name:first]:checked");
+  var questionTwo = $("input:radio[name:second]:checked");
+  var questionThree = $("input:radio[name:third]:checked");
+  var questionFour = $("input:radio[name:fourth]:checked");
+  var questionFive = $("input:radio[name:fifth]:checked");
+  var questionSix = $("input:radio[name:sixth]:checked");
+  var questionSeven = $("input:radio[name:seventh]:checked");
+  var questionEight = $("input:radio[name:eighth]:checked");
+  var questionNine = $("input:radio[name:ninth]:checked");
+  var questionTen = $("input:radio[name:tenth]:checked");
+    
+  })
+})
