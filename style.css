@@ -41,9 +41,9 @@ body{
   }
 
   label{
-       color:black;
-       font-style: italic;
-       font-size: 5px;
+      color:black;
+      font-style: italic;
+      font-size: 5px;
   }
   label > input {
     display: flex;
@@ -58,3 +58,8 @@ body{
     font-weight: bold;
   }
   #button{display:none;}
+
+  footer{
+    text-align: center;
+    color: white;
+  }
