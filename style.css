@@ -59,10 +59,10 @@ body{
     font-weight: bold;
   }
   #button{display:none;}
-#submit{margin-left:400px;
-background-color: rgb(65, 17, 17);
-color:white;
-padding:30px;}
+  #submit{margin-left:400px;
+   background-color: rgb(65, 17, 17);
+   color:white;
+   padding:30px;}
   footer p{
     text-align: center;
     color: white;
