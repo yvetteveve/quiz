@@ -1,6 +1,5 @@
 var count = 0;
 function check() {
-
    
 
   if (questionOne == "2") {

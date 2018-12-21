@@ -38,8 +38,8 @@ In making the quiz board website is mainly  used javascript,html,css and jquery 
 I also used ubuntu software and visual studio code to write my code and used github to push my repository and host the website. 
 ## Support and contact details
 If needed contact me on:
-E-mail:nicoleha127@gmail.com
-PhquestionOne:0732702205-0781899928.
+E-mail:yvetteumubyeyi2@gmail.com
+PhquestionOne:0782237885.
 ### License
 **[MIT](http://choosealisence.com/licenses/mit/)**
-Copyright (c) 2018 **HATEGEKIMANA NICOLE**
+Copyright (c) 2018 **Yvette Umubyeyi**
