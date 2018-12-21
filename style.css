@@ -1,0 +1,59 @@
+body{
+    background-color: rgb(65, 17, 17);
+
+  }
+  h2{height:100px;
+    color: black;
+    font-size: 50px; 
+    font-style: italic;
+    
+    }
+    #background{
+      background-image:url("https://images.pexels.com/photos/40757/pen-crayon-color-sharp-40757.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=500&w=500");
+      background-size: cover;
+      width: 100%;
+     padding-left: 450px;
+    }
+
+    h3{
+      color: black;
+      font-style: italic;
+    }
+
+  .radio{background-color: white;
+        width:70%;
+      }
+  p {
+    /* padding-top:50px; */
+    color: black;
+    font-family: verdana;
+    font-size: 20px;
+    font-style: italic;
+    text-align: left;
+      
+  }
+
+  .done{
+      background-color: white;
+      font-size: 25px;
+      height: 40%;
+      width: 70%;
+  }
+
+  label{
+       color:black;
+       font-style: italic;
+       font-size: 5px;
+  }
+  label > input {
+    display: flex;
+    justify-content: flex-start
+  }
+
+  .input{
+    font-size:17px;
+  }
+
+  .question{
+    font-weight: bold;
+  }
