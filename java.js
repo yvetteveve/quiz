@@ -9,7 +9,6 @@ function check(
  questionSeven,
  questionEight,
  questionNine,
- questionNine,
  questionTen
 ) {
  if (questionOne == "2") {
@@ -30,10 +29,10 @@ function check(
  if (questionSix == "2") {
    count += 2;
  }
- if (questionSeven == "4") {
+ if (questionSeven== "2") {
    count += 2;
  }
- if (questionEight == "4") {
+ if (questionEight == "1") {
    count += 2;
  }
  if (questionNine == "1") {
@@ -45,8 +44,9 @@ function check(
  return count;
 }
 $(document).ready(function() {
- $("#radio form").submit(function() {
-   var Question1 = $("input[type='radio'][name='first']:checked").val();
+ $("form#quiz").submit(function(event) {
+   event.preventDefault();
+   var question1 = $("input:radio[name=first]:checked").val();
    var Question2 = $("input[type='radio'][name='second']:checked").val();
    var Question3 = $("input[type='radio'][name='third']:checked").val();
    var Question4 = $("input[type='radio'][name='fourth']:checked").val();
@@ -56,26 +56,27 @@ $(document).ready(function() {
    var Question8 = $("input[type='radio'][name='eighth']:checked").val();
    var Question9 = $("input[type='radio'][name='ninth']:checked").val();
    var Question10 = $("input[type='radio'][name='tenth']:checked").val();
-
-   console.log(Question1)
+   check(
+    question1,
+    Question2,
+    Question3,
+    Question4,
+    Question5,
+    Question6,
+    Question7,
+    Question8,
+    Question9,
+    Question10
+  ) 
+   console.log(question1)
 
    $("#button").hide();
    $("#quiz").hide();
    $("#number_count").text(
      "You got " +
-       check(
-         Question1,
-         Question2,
-         Question3,
-         Question4,
-         Question5,
-         Question6,
-         Question7,
-         Question8,
-         Question9,
-         Question10
-       ) +
-       "%."
+     check()
+       +
+       "/20."
    );
 
    event.preventDefault();
